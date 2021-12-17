@@ -1,0 +1,45 @@
+{
+  "products": [
+    { "id": 1,
+      "name": "Headphone1",
+      "category_id": 2,
+      "description": "product description goes here",
+      "product_img": "img_path",
+      "price": 100,
+      "is_available": true,
+      "rating": 4,
+      "review":120,
+      "vendor_name": "seller 1",
+      "warranty": 2
+     },
+     { "id": 2,
+      "name": "Headphone1",
+      "category_id": 2,
+      "description": " description goes here",
+      "product_img": "img_path",
+      "price": 40,
+      "is_available": true,
+      "rating": 4,
+      "review":120,
+      "vendor_name": "seller 1",
+      "warranty": 2
+     },
+     { "id": 3,
+      "name": "Mic",
+      "category_id": 2,
+      "description": " goes here",
+      "product_img": "img_path",
+      "price": 2100,
+      "is_available": true,
+      "rating": 4,
+      "review":120,
+      "vendor_name": "seller 1",
+      "warranty": 2
+     }
+
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
