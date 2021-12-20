@@ -27,7 +27,7 @@ export class PropertyListComponent implements OnInit {
       this.properties=response;
     },
     error=>{
-      console.log(error);
+      console.log("error");
 
     }
     )

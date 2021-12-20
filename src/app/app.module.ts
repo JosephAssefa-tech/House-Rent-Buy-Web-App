@@ -1,9 +1,15 @@
+import {RouterModule, Routes} from '@angular/router';
+
+import { AddPropertyComponent } from './property/add-property/add-property/add-property.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { HousingService } from './services/housing.service';
+import {HttpClientModule} from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NgModule } from '@angular/core';
 import { PropertyCardComponent } from './property/property-card/property-card.component';
+import { PropertyDetailComponent } from './property/property-detail/property-detail/property-detail.component';
 import { PropertyListComponent } from './property/property-list/property-list.component';
 
 @NgModule({
@@ -12,13 +18,20 @@ import { PropertyListComponent } from './property/property-list/property-list.co
     PropertyCardComponent,
     PropertyListComponent,
     NavBarComponent,
-    NavBarComponent
+    NavBarComponent,
+    AddPropertyComponent,
+    AddPropertyComponent,
+    PropertyDetailComponent,
+    PropertyDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    RouterModule
+
   ],
-  providers: [],
+  providers: [HousingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
