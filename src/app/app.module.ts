@@ -4,6 +4,7 @@ import { AddPropertyComponent } from './property/add-property/add-property/add-p
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { HousingService } from './services/housing.service';
 import {HttpClientModule} from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -27,8 +28,9 @@ import { PropertyListComponent } from './property/property-list/property-list.co
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
 
   ],
   providers: [HousingService],
