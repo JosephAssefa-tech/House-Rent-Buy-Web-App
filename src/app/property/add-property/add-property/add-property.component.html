@@ -7,7 +7,12 @@
     <form (ngSubmit)="onSubmit(Form)" #Form="ngForm">
       <div class="form-group col-12">
         <label for="name">Name</label>
-        <input type="text" class="form-control" ngModel name="Name" required>
+        <input type="text" class="form-control" #propName="ngModel" ngModel name="Name" required
+        minlength="5">
+        <span *ngIf="!propName.valid && propName.touched" an class="error-block">
+          <!-- <span *ngIf="propName.errors.required">Please add a name</span>
+          <span *ngIf="propName.errors.minlength">Name at least five character</span> -->
+        </span>
       </div>
       <div class="form-group col-12">
         <label for="type">Type</label>
