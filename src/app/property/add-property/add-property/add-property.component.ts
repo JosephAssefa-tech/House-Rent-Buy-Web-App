@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Form, NgForm } from '@angular/forms';
 
+import { Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class AddPropertyComponent implements OnInit {
   @ViewChild('Form') addPropertyForm!:NgForm;
+  // @Input() property:string ={} as string;
 
   constructor(private route:Router) { }
 
