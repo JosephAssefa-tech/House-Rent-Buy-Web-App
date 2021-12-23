@@ -22,7 +22,9 @@ import { UserRegisterComponent } from './user/user-register/user-register/user-r
     NavBarComponent,
     AddPropertyComponent,
     PropertyDetailComponent,
+    PropertyListComponent,
     UserRegisterComponent,
+    UserLoginComponent
 
   ],
   imports: [
