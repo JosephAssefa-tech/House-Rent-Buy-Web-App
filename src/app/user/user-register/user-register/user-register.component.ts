@@ -11,5 +11,9 @@ export class UserRegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onSubmit()
+  {
+
+  }
 
 }
