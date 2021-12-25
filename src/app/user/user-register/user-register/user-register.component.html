@@ -11,7 +11,7 @@
             <input type="text" class="form-control"
             formControlName="userName"
             >
-            <span *ngIf="!userName.valid && (userName.touched || userSubmitted)"
+            <span *ngIf="!userName.valid && userName.touched"
             class="error-block">
               Please provide name
             </span>

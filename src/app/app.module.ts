@@ -1,10 +1,10 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 
 import { AddPropertyComponent } from './property/add-property/add-property/add-property.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { HousingService } from './services/housing.service';
 import {HttpClientModule} from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -33,6 +33,7 @@ import { UserRegisterComponent } from './user/user-register/user-register/user-r
     FormsModule,
     HttpClientModule,
     RouterModule,
+    ReactiveFormsModule
 
   ],
   providers: [HousingService],
