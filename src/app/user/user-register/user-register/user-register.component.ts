@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {FormControl, FormGroup, ValidatorFn, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-user-register',
@@ -8,6 +8,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 })
 export class UserRegisterComponent implements OnInit {
   registerationForm: FormGroup={} as FormGroup;
+
 
   constructor() { }
 
@@ -21,17 +22,41 @@ export class UserRegisterComponent implements OnInit {
 
     },this.passwordMatchingValidator);
   }
-  passwordMatchingValidator(fg:FormGroup): Validators {
-    return fg.get('password').value === fg.get('confirmPassword').value?null:
+  passwordMatchingValidator(fg:FormGroup): ValidatorFn[] {
+    return fg.get('password').value === fg.get('confirmPassword').value ? null:
     {notmatched:true};
   }
   get userName()
   {
     return this.registerationForm.get('userName') as FormControl;
   }
+  get email()
+  {
+    return this.registerationForm.get('email') as FormControl;
+
+  }
+  get password()
+  {
+    return this.registerationForm.get('password') as FormControl;
+  }
+  get confirmPassword()
+  {
+    return this.registerationForm.get('confirmPassword') as FormControl;
+  }
+  get mobile()
+  {
+    return this.registerationForm.get('mobile') as FormControl;
+
+
+  }
+
   onSubmit()
   {
     console.log(this.registerationForm);
+
+  }
+  onReset()
+  {
 
   }
 
