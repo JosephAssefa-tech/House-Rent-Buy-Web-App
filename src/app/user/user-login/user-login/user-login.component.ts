@@ -11,9 +11,9 @@ export class UserLoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onLogin()
+  onLogin(login:anny)
   {
-    
+
   }
 
 }
