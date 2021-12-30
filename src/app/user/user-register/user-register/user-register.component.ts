@@ -23,8 +23,8 @@ export class UserRegisterComponent implements OnInit {
     },this.passwordMatchingValidator);
   }
   passwordMatchingValidator(fg:FormGroup): Validators {
-    // return fg.get('password').value === fg.get('confirmPassword').value ? null:
-    // {notmatched:true};
+    return fg.get('password').value === fg.get('confirmPassword').value ? null:
+   {notmatched:true};
   }
   get userName()
   {

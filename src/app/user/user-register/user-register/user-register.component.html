@@ -3,6 +3,7 @@
   <div class="card m-auto">
     <div class="card-header">
       <h3>Sign Up</h3>
+      <h4>You have to signup to access the feature of the system</h4>
     </div>
     <div class="card-body">
       <form [formGroup]="registerationForm" (ngSubmit)="onSubmit()">
@@ -38,7 +39,7 @@
               Please provide password
             </span>
             <span *ngIf="password.errors.minlength">
-              Password should not be lesser than 8 character
+              Password  not be lesser than 8 character
             </span>
           </span>
         </div>
