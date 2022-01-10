@@ -20,12 +20,12 @@ export class UserRegisterComponent implements OnInit {
       confirmPassword:new FormControl('',[Validators.required]),
       mobile: new FormControl('', [Validators.required, Validators.maxLength(10)])
 
-    },this.passwordMatchingValidator);
+    }); //,this.passwordMatchingValidator);
   }
-  passwordMatchingValidator(fg:FormGroup): Validators {
-    return fg.get('password').value === fg.get('confirmPassword').value ? null:
-   {notmatched:true};
-  }
+  // passwordMatchingValidator(fg:FormGroup): Validators {
+  //   return fg.get('password').value === fg.get('confirmPassword').value ? null:
+  //  {notmatched:true};
+  // }
   get userName()
   {
     return this.registerationForm.get('userName') as FormControl;
