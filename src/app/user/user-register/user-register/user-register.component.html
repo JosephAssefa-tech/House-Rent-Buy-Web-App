@@ -35,12 +35,12 @@
           <label for="passwrod" class="form-label">Password</label>
           <input type="password" class="form-control" formControlName="password">
           <span *ngIf="!password.valid && password.touched" class="error-block">
-            <!-- <span *ngIf="password.errors['required']">
+            <span *ngIf="password.errors['required']">
               Please provide password
-            </span> -->
-            <!-- <span *ngIf="password.errors.minlength">
+            </span>
+            <span *ngIf="password.errors.minlength">
               Password  not be lesser than 8 character
-            </span> -->
+            </span>
           </span>
         </div>
 
