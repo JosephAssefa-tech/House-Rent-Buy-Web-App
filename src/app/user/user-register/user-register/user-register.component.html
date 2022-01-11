@@ -62,7 +62,7 @@
           <input type="text" class="form-control" formControlName="mobile">
           <span  *ngIf="!mobile.valid && (mobile.touched)" class="error-block">
               <span *ngIf="mobile.hasError('required')">
-                Please provide mobile
+                Please provide mobile/phone number
               </span>
               <span *ngIf="mobile.hasError('maxlength')" class="error-block">
                 Invalid mobile number
